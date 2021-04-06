@@ -1,6 +1,6 @@
 self.addEventListener('install', event => {
   event.waitUntil(
-    caches.open('vue-pwa-cache-v2')
+    caches.open('organizer-duck-cache-v1')
     .then(cache => {
       // Files to cache
       return cache.addAll([
@@ -14,8 +14,8 @@ self.addEventListener('install', event => {
         'Dist/feather.min.js.map',
 
         // Scripts & Styles
-        'Src/Styles/styles.css',
-        'Src/Styles/styles.min.less',
+        'Src/Styles/styles.less',
+        'Src/Styles/styles.min.css',
         'Src/router.js',
         'Src/app.js',
 
