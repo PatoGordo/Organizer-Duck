@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Vue pwa</title>
+    <link rel="shortcut icon" href="./Images/vue.png" type="image/x-icon">
+
+    <!-- Pwa Scripts -->
+    <meta name="theme-color" content="#1d1e25"/>
+    <link rel="manifest" href="manifest.json">
+		<script>if('serviceWorker' in navigator) {navigator.serviceWorker.register('worker.js')}</script>
+
+    <!-- Styles -->
+    <link href="./Src/Styles/style.css" rel="stylesheet" type="text/css" />
+
+    <!-- Scripts -->
+    <script src="./Dist/vue.js"></script>
+    <script src="./Src/app.js" type="module" defer></script>
+  </head>
+  <body>
+    <div id="app"></div>
+  </body>
+</html>
