@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Vue pwa</title>
+    <title>Organizer Duck</title>
     <link rel="shortcut icon" href="./Images/vue.png" type="image/x-icon">
 
     <!-- Pwa Scripts -->
@@ -12,10 +12,18 @@
 		<script>if('serviceWorker' in navigator) {navigator.serviceWorker.register('worker.js')}</script>
 
     <!-- Styles -->
-    <link href="./Src/Styles/style.css" rel="stylesheet" type="text/css" />
+    <!-- Dev -->
+    <!-- <link href="./Src/Styles/styles.less" rel="stylesheet/less" type="text/css" /> -->
+    <!-- Prod -->
+    <link href="./Src/Styles/styles.min.css" rel="stylesheet" type="text/css" />
 
-    <!-- Scripts -->
+    <!-- Dist modules -->
     <script src="./Dist/vue.js"></script>
+    <script src="./Dist/less.js"></script>
+    <script src="./Dist/vue-router.js"></script>
+    <script src="./Dist/fathericons.min.js"></script>
+
+    <!-- App module -->
     <script src="./Src/app.js" type="module" defer></script>
   </head>
   <body>

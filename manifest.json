@@ -1,6 +1,11 @@
 {
-  "short_name": "Vue pwa",
-  "name": "Vue pwa",
+  "short_name": "Organizer",
+  "name": "Organizer Duck",
+  "start_url": "/#/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#1d1e25",
+  "background_color": "#1d1e25",
   "icons": [
     {
       "src": "/Images/android-launchericon-512-512.png",
@@ -32,10 +37,5 @@
       "type": "image/png",
       "sizes": "48x48"
     }
-  ],
-  "start_url": "/index.html",
-  "background_color": "#1d1e25",
-  "display": "standalone",
-  "orientation": "portrait",
-  "theme_color": "#1d1e25"
+  ]
 }

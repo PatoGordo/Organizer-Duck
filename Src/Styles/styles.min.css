@@ -1,0 +1,13 @@
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#1d1e25;color:#fff;font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;text-align:center}
+img{width:100px}
+#app{height:100vh;display:flex;flex-direction:column;align-items:center}
+button,a,input,label,.float-bottom-btn{user-select:none;-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;-webkit-tap-highlight-color:transparent}
+.view{margin-top:10px}
+.bottom-bar{background:rgba(0,0,0,0.3);position:fixed;bottom:0;width:100%;display:flex;flex-direction:row;align-items:center;justify-content:space-evenly;padding:20px 0}
+.icon{width:26px;height:26px;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;fill:none}
+.float-bottom-btn{cursor:pointer;transition:all ease .3s;position:absolute;background:rgba(0,0,0,0.7);border-radius:50%;bottom:63%;padding:5px;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.float-bottom-btn .icon{height:50px;width:50px}
+.float-bottom-btn:hover{background:rgba(37,37,37,0.7);transition:all ease .3s}
+item{display:flex;flex-direction:column;align-items:center}
+item small{font-weight:300}
