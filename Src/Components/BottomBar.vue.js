@@ -6,9 +6,8 @@ Vue.component('app-bottom-bar', {
   },
 	template: `
 		<nav class="bottom-bar">
-      <item><icon class="icon" data-feather="home"></icon><small>home</small></item>
-      <item class="float-bottom-btn"><icon class="icon " data-feather="plus"></icon></item>
-      <item><icon class="icon" data-feather="bookmark"></icon><small>bookmark</small></item>
+      <router-link to="/" class="bottombar-item"><icon class="bottombar-icon" data-feather="home"></icon><small>Home</small></router-link>
+      <router-link to="/settings" class="bottombar-item"><icon class="bottombar-icon" data-feather="settings"></icon><small>Settings</small></router-link>
 		</nav>
 	`
 })

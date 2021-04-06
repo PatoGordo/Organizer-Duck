@@ -15,6 +15,8 @@ self.addEventListener('install', event => {
 
         // Scripts & Styles
         'Src/Styles/styles.less',
+        'Src/Styles/Components/BottomBar.less',
+        'Src/Styles/Views/Home.less',
         'Src/Styles/styles.min.css',
         'Src/router.js',
         'Src/app.js',

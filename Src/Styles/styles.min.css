@@ -1,13 +1,22 @@
-*{margin:0;padding:0;box-sizing:border-box}
-body{background:#1d1e25;color:#fff;font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;text-align:center}
-img{width:100px}
-#app{height:100vh;display:flex;flex-direction:column;align-items:center}
+*{padding:0;margin:0;box-sizing:border-box;outline:none;font-family:'Roboto',sans-serif;list-style:none;text-decoration:none}
+body{width:100%;height:100%}
 button,a,input,label,.float-bottom-btn{user-select:none;-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;-webkit-tap-highlight-color:transparent}
-.view{margin-top:10px}
-.bottom-bar{background:rgba(0,0,0,0.3);position:fixed;bottom:0;width:100%;display:flex;flex-direction:row;align-items:center;justify-content:space-evenly;padding:20px 0}
-.icon{width:26px;height:26px;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;fill:none}
-.float-bottom-btn{cursor:pointer;transition:all ease .3s;position:absolute;background:rgba(0,0,0,0.7);border-radius:50%;bottom:63%;padding:5px;display:flex;flex-direction:column;align-items:center;justify-content:center}
-.float-bottom-btn .icon{height:50px;width:50px}
-.float-bottom-btn:hover{background:rgba(37,37,37,0.7);transition:all ease .3s}
-item{display:flex;flex-direction:column;align-items:center}
-item small{font-weight:300}
+#app{width:100%;height:100%}
+.view{width:100%;height:100%;display:flex;margin-bottom:80px;flex-direction:column;align-items:center;text-align:center}
+textarea{resize:none}
+.bottom-bar{position:fixed;bottom:0;height:80px;width:100%;background:#2d333b;display:flex;flex-direction:row;align-items:center;justify-content:space-around}
+.bottom-bar .bottombar-item{color:#cdd9e5;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.bottom-bar .bottombar-item .bottombar-icon{height:36px;width:36px;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;fill:none}
+.bottom-bar .bottombar-item small{margin-top:3px;color:#b0b8c0}
+.home-logo{color:#fff;font-weight:400;margin-top:25px}
+.items{display:grid;grid-template-columns:1fr 1fr;grid-gap:27px;margin-top:25px}
+.items .item{color:#000;width:140px;height:140px;border-radius:10px;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.items .item h3{font-weight:400;font-size:24px}
+.items .item .item-icon{height:50px;width:50px;stroke:currentColor;stroke-width:1;margin-top:8px;stroke-linecap:round;stroke-linejoin:round;fill:none}
+.items .item:nth-child(1){background:#ffe082}
+.items .item:nth-child(2){background:#a5d6a7}
+.items .item:nth-child(3){background:#9fa8da}
+.items .item:nth-child(4){background:#ffcc80}
+.items .item:nth-child(5){background:#b3e5fc}
+.items .item:nth-child(6){background:#fce4ec}
+body{background:#22272e;color:#cdd9e5}
