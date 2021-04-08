@@ -10,7 +10,7 @@ const Home = Vue.component('Home', {
   },
   template: `
     <div class="view">
-      <h2 class="home-logo">Organizer 🦆</h2>
+      <h2 class="view-logo">Organizer 🦆</h2>
       <section class="items">
         <router-link to="/routine" class="item">
           <h3>Routine</h3>

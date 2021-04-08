@@ -10,19 +10,29 @@ self.addEventListener('install', event => {
         'Dist/vue.js',
         'Dist/less.js',
         'Dist/vue-router.js',
-        'Dist/fathericons.min.js',
+        'Dist/feathericons.min.js',
         'Dist/feather.min.js.map',
 
         // Scripts & Styles
         'Src/Styles/styles.less',
+        'Src/Styles/presets.less',
+
         'Src/Styles/Components/BottomBar.less',
+
+        'Src/Styles/Views/Edit.less',
         'Src/Styles/Views/Home.less',
+        'Src/Styles/Views/Routine.less',
+
         'Src/Styles/styles.min.css',
+
         'Src/router.js',
         'Src/app.js',
 
         // Views
         'Src/Views/Home.vue.js',
+        'Src/Views/Edit.vue.js',
+        'Src/Views/Routine.vue.js',
+        'Src/Views/Routine-Days.vue.js',
         'Src/Views/404.vue.js',
 
         // Components

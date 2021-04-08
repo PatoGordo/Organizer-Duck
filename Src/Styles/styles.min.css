@@ -3,12 +3,14 @@ body{width:100%;height:100%}
 button,a,input,label,.float-bottom-btn{user-select:none;-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;-webkit-tap-highlight-color:transparent}
 #app{width:100%;height:100%}
 .view{width:100%;height:100%;display:flex;margin-bottom:80px;flex-direction:column;align-items:center;text-align:center}
+.view-logo{color:#fff;font-weight:400;margin-top:25px}
+a{color:#fff}
 textarea{resize:none}
+.taed3s{transition:all ease .3s}
 .bottom-bar{position:fixed;bottom:0;height:80px;width:100%;background:#2d333b;display:flex;flex-direction:row;align-items:center;justify-content:space-around}
 .bottom-bar .bottombar-item{color:#cdd9e5;display:flex;flex-direction:column;align-items:center;justify-content:center}
 .bottom-bar .bottombar-item .bottombar-icon{height:36px;width:36px;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;fill:none}
 .bottom-bar .bottombar-item small{margin-top:3px;color:#b0b8c0}
-.home-logo{color:#fff;font-weight:400;margin-top:25px}
 .items{display:grid;grid-template-columns:1fr 1fr;grid-gap:27px;margin-top:25px}
 .items .item{color:#000;width:140px;height:140px;border-radius:10px;display:flex;flex-direction:column;align-items:center;justify-content:center}
 .items .item h3{font-weight:400;font-size:24px}
@@ -19,4 +21,17 @@ textarea{resize:none}
 .items .item:nth-child(4){background:#ffcc80}
 .items .item:nth-child(5){background:#b3e5fc}
 .items .item:nth-child(6){background:#fce4ec}
+.edit-routine-day{display:flex;flex-direction:column;align-items:center;width:100%}
+.routine-nav{display:flex;flex-direction:row;align-items:center;justify-content:space-evenly;width:50%}
+.routine-nav a{text-decoration:underline}
+.items-routine{width:100%;display:flex;flex-direction:column;align-items:center}
+.items-routine .item-routine{display:flex;flex-direction:row;align-items:center;padding:15px 10px;margin:10px 0;background:#373e47;border-radius:5px;width:90%}
+.items-routine .item-routine .item-text{text-align:start}
+.items-routine .item-routine .item-text:nth-child(2){width:80%}
+.items-routine .item-routine input[type="checkbox"]{width:25px;height:25px;background:#fff;border-radius:50%;vertical-align:middle;-webkit-appearance:none;outline:none;cursor:pointer;margin-left:auto;transition:all ease .3s}
+.items-routine .item-routine input[type="checkbox"]:checked{transition:all ease .3s;background:#69F0AE}
+.items-routine .item-routine button,.items-routine .item-routine a{background:none;border:none}
+.items-routine .item-routine button .icon,.items-routine .item-routine a .icon{margin-right:5px;color:#fff;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;fill:none}
+.items-routine .item-routine button.routine-day,.items-routine .item-routine a.routine-day{margin-left:auto}
+.items-routine .item-routine button.routine-day.left,.items-routine .item-routine a.routine-day.left{margin-left:0}
 body{background:#22272e;color:#cdd9e5}
