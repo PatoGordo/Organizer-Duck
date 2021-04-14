@@ -1,8 +1,11 @@
+import db from '../storage.js'
+
 const Routine = Vue.component('Routine', {
   data: function () {
     return {
   		title: 'Organizer Duck - Routine',
-      isConclused: false
+      isConclused: false,
+      data_: null
     }
   },
   methods: {
@@ -13,6 +16,11 @@ const Routine = Vue.component('Routine', {
   mounted() {
 		document.title = this.title 
     feather.replace()
+  },
+  created() {
+    db.pages.get('DailyRoutine').then((data) => {
+      this.data_ = data
+    })
   },
   template: `
     <div class="view">

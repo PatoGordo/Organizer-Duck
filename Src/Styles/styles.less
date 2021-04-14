@@ -1,10 +1,25 @@
-@import './presets.less';
-@import './Components/BottomBar.less';
-@import './Views/Home.less';
-@import './Views/Edit.less';
-@import './Views/Routine.less';
+// Presets
+@import './presets';
 
-body {
-  background: #22272e;
-  color: #cdd9e5;
-}
+// Themes (Dark theme is the default theme)
+@import './Themes/dark';
+@import './Themes/light';
+
+// Components and Views styles
+@import './Components/BottomBar';
+@import './Components/AddButton';
+@import './Components/ModalEdit';
+@import './Components/Forms';
+@import './Views/Routine';
+@import './Views/Home';
+@import './Views/Edit';
+@import './Views/Todo';
+
+// App framework
+@import './AppFramework/tests';
+@import './AppFramework/colors';
+@import './AppFramework/cursors';
+@import './AppFramework/displays';
+@import './AppFramework/positions';
+@import './AppFramework/background';
+@import './AppFramework/transitions';

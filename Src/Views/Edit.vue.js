@@ -1,12 +1,25 @@
+import db from '../storage.js'
+import '../Components/AddButton.vue.js'
+import '../Components/ModalEdit.vue.js'
+
 const Edit = Vue.component('Edit', {
   data: function () {
     return {
-  		title: "Edit"
+  		title: "Edit",
+      tasks: []
+    }
+  },
+  methods: {
+    changeState() {
+      document.querySelector('.modal').classList.toggle('none')
     }
   },
 	created(){
-		document.title = this.title 
+		document.title = this.title
 	},
+  mounted() {
+    feather.replace()
+  },
   template: `
     <div class="view">
       <!--<h2>{{$route.params.whatedit}}/{{$route.params.id}}</h2>-->
@@ -17,6 +30,9 @@ const Edit = Vue.component('Edit', {
           <router-link to="/routine/days">All days</router-link>
         </div>
       </section>
+
+      <b @click="changeState()"><app-add-button class="float" /></b>
+      <app-modal-edit class="none" :title="$route.params.id" />
     </div>
   `
 })

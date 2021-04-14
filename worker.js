@@ -1,61 +1,84 @@
-self.addEventListener('install', event => {
-  event.waitUntil(
-    caches.open('organizer-duck-cache-v1')
-    .then(cache => {
-      // Files to cache
-      return cache.addAll([
-        // Files and CDN's
-        '/',
-        'index.html',
-        'Dist/vue.js',
-        'Dist/less.js',
-        'Dist/vue-router.js',
-        'Dist/feathericons.min.js',
-        'Dist/feather.min.js.map',
+// self.addEventListener('install', event => {
+//   event.waitUntil(
+//     caches.open('organizer-duck-cache-v1')
+//     .then(cache => {
+//       // Files to cache
+//       return cache.addAll([
+//         // Files and CDN's
+//         '/',
+//         'index.html',
 
-        // Scripts & Styles
-        'Src/Styles/styles.less',
-        'Src/Styles/presets.less',
+//          // Lib
+//         'Lib/dexie.min.js',
+//         'Lib/feather.min.js.map',
+//         'Lib/feathericons.min.js',
+//         'Lib/less.js',
+//         'Lib/vue-router.js',
+//         'Lib/vue.js',
 
-        'Src/Styles/Components/BottomBar.less',
+//         // Scripts & Styles
+//         'Src/Styles/styles.less',
+//         'Src/Styles/presets.less',
 
-        'Src/Styles/Views/Edit.less',
-        'Src/Styles/Views/Home.less',
-        'Src/Styles/Views/Routine.less',
+//         'Src/Styles/Components/AddButton.less',
+//         'Src/Styles/Components/BottomBar.less',
+//         'Src/Styles/Components/Forms.less',
+//         'Src/Styles/Components/ModalEdit.less',
 
-        'Src/Styles/styles.min.css',
+//         'Src/Styles/Views/Edit.less',
+//         'Src/Styles/Views/Home.less',
+//         'Src/Styles/Views/Routine.less',
+//         'Src/Styles/Views/Todo.less',
 
-        'Src/router.js',
-        'Src/app.js',
+//         'Src/Styles/Themes/dark.less',
+//         'Src/Styles/Themes/light.less',
 
-        // Views
-        'Src/Views/Home.vue.js',
-        'Src/Views/Edit.vue.js',
-        'Src/Views/Routine.vue.js',
-        'Src/Views/Routine-Days.vue.js',
-        'Src/Views/404.vue.js',
+//         'Src/Styles/AppFramework/background.less',
+//         'Src/Styles/AppFramework/colors.less',
+//         'Src/Styles/AppFramework/cursors.less',
+//         'Src/Styles/AppFramework/displays.less',
+//         'Src/Styles/AppFramework/positions.less',
+//         'Src/Styles/AppFramework/tests.less',
+//         'Src/Styles/AppFramework/transitions.less',
 
-        // Components
-        'Src/Components/BottomBar.vue.js',
 
-        // Images
-        'Images/vue.png',
-        'Images/logo-github.svg',
-        'Images/android-launchericon-512-512.png',
-        'Images/android-launchericon-192-192.png',
-        'Images/android-launchericon-144-144.png',
-        'Images/android-launchericon-96-96.png',
-        'Images/android-launchericon-72-72.png',
-        'Images/android-launchericon-48-48.png'
-      ])
-    })
-  )
-})
+//         'Src/Styles/styles.min.css',
 
-self.addEventListener('fetch', function(event) {
-  event.respondWith(
-    caches.match(event.request).then(function(response) {
-      return response || fetch(event.request)
-    })
-  )
-})
+//         'Src/app.js',
+//         'Src/router.js',
+//         'Src/storage.js',
+
+//         // Views
+//         'Src/Views/404.vue.js',
+//         'Src/Views/Edit.vue.js',
+//         'Src/Views/Home.vue.js',
+//         'Src/Views/Routine-Days.vue.js',
+//         'Src/Views/Routine.vue.js',
+//         'Src/Views/Todo.vue.js',
+
+//         // Components
+//         'Src/Components/AddButton.vue.js',
+//         'Src/Components/BottomBar.vue.js',
+//         'Src/Components/ModalEdit.vue.js',
+
+//         // Images
+//         'Images/vue.png',
+//         'Images/logo-github.svg',
+//         'Images/android-launchericon-512-512.png',
+//         'Images/android-launchericon-192-192.png',
+//         'Images/android-launchericon-144-144.png',
+//         'Images/android-launchericon-96-96.png',
+//         'Images/android-launchericon-72-72.png',
+//         'Images/android-launchericon-48-48.png'
+//       ])
+//     })
+//   )
+// })
+
+// self.addEventListener('fetch', function(event) {
+//   event.respondWith(
+//     caches.match(event.request).then(function(response) {
+//       return response || fetch(event.request)
+//     })
+//   )
+// })

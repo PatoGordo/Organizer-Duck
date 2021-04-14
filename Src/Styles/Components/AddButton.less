@@ -1,0 +1,33 @@
+b {
+  .flex();
+  .flex.col();
+  .items.center();
+  .justify.center();
+}
+.add-button {
+  background: #373e47;
+  color: white;
+  border: 0;
+  border-radius: 50%;
+  padding: 8px;
+  z-index: 10;
+  .flex();
+  .flex.col();
+  .items.center();
+  .justify.center();
+  .cursor.pointer();
+  .icon {
+    width: 45px;
+    height: 45px;
+    stroke: currentColor;
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+  }
+  &.float{
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 50px !important;
+  }
+}
